@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom styles to manage mobile menu */
+        .navbar-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-menu {
+                display: block;
+                position: absolute;
+                top: 4rem;
+                right: 0;
+                background-color: white;
+                width: 100%;
+                border: 1px solid #e2e8f0;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                z-index: 50;
+            }
+
+            .navbar-menu a {
+                display: block;
+                padding: 1rem;
+                border-bottom: 1px solid #e2e8f0;
+                text-align: center;
+            }
+
+            .navbar-menu a:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-white py-4 shadow-md relative">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold text-green-600">SMIT</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="/pages/index/index.html" class="text-gray-700 hover:text-green-600">Home</a>
+                <a href="/pages/Blog/display.html" class="text-gray-700 hover:text-green-600">Blogs</a>
+                <a href="/pages/about/about.html" class="text-gray-700 hover:text-green-600">About us</a>
+                <a href="/pages/feedback_form/form.html" class="text-gray-700 hover:text-green-600">Contact Us</a>
+                <a href="/index.html" class="text-gray-700 hover:text-green-600">Signup</a>
+                <a href="/pages/Login/login.html" class="text-gray-700 hover:text-green-600">Login</a>
+            </div>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg">Donate Now</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Be a Sponsor</a>
+            </div>
+            <!-- Mobile menu button -->
+            <button id="menu-toggle"
+                class="md:hidden flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="menu" class="navbar-menu hidden">
+            <a href="/pages/index/index.html" class="text-gray-700 hover:text-green-600">Home</a>
+            <a href="/pages/Blog/display.html" class="text-gray-700 hover:text-green-600">Blogs</a>
+            <a href="/pages/about/about.html" class="text-gray-700 hover:text-green-600">About us</a>
+            <a href="/pages/feedback_form/form.html" class="text-gray-700 hover:text-green-600">Contact Us</a>
+            <a href="/index.html" class="text-gray-700 hover:text-green-600">Signup</a>
+            <a href="/pages/Login/login.html" class="text-gray-700 hover:text-green-600">Login</a>
+            <div class="flex flex-col mt-4 px-4">
+                <a href="#" class="bg-green-600 text-white px-4 py-2 rounded-lg mb-2 text-center">Donate Now</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center">Be a Sponsor</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto px-6 py-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6">About Saylani Mass IT Training</h2>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                Saylani Mass IT Training is committed to equipping individuals with essential IT skills for a rapidly
+                changing technological landscape. Our goal is to provide comprehensive, hands-on training in various IT
+                fields, preparing students to excel in their careers and contribute to the growth of the technology
+                sector in Pakistan.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="flex flex-col items-center justify-center p-4">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646141210/website-images/static/6.jpg"
+                        alt="Training" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Our Mission</h3>
+                    <p class="text-gray-700 text-lg">
+                        We strive to empower over 1 million software developers and IT professionals to drive innovation
+                        and growth in Pakistan. Our mission is to deliver high-quality training that fosters a skilled
+                        and knowledgeable workforce ready to tackle the challenges of the digital age.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-4">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1647252496/website-images/static/55.jpg"
+                        alt="Impact" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-700 text-lg">
+                        Since our inception, Saylani Mass IT Training has successfully trained over 75,000 students. Our
+                        graduates are making significant contributions across various industries, reflecting the
+                        effectiveness of our training programs and the positive impact on their careers.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="flex flex-col items-center justify-center p-4">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646497311/website-images/static/24.jpg"
+                        alt="Training" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Saylani Mass And IT Training</h3>
+                    <p class="text-gray-700 text-lg">
+                        Today is the age of information technology, and we aim to equip our youth
+                        with computer programming skills and prepare them for the development of the country. In this
+                        regard,
+                        our Saylani Mass IT Training Program provides vocational training to more than 75,000 students
+                        in
+                        Web and Mobile Application Development, CCNA, Graphics Designing, Computer-Based Accounting in
+                        Karachi,
+                        Hyderabad, Faisalabad, Islamabad. Our goal is to develop more than 1 million software developers
+                        across the country, which will add about $100 billion annually to Pakistan's economy.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-4">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646497613/website-images/static/27.jpg"
+                        alt="Impact" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Saylani Breakfast</h3>
+                    <p class="text-gray-700 text-lg">
+                        Since our inception, Saylani Mass IT Training has successfully trained over 75,000 students. Our
+                        graduates are making significant contributions across various industries, reflecting the
+                        effectiveness of our training programs and the positive impact on their careers.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="text-lg font-semibold">&copy; 2024 SMIT. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2 transition">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2 transition">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2 transition">Contact Us</a>
+            </div>
+            <div class="mt-6 flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="mt-4">
+                <p class="text-gray-200 text-sm">Developed by MD Usman</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="/pages/index/navbar.js"></script>
+</body>
+
+</html>
